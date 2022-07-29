@@ -1,0 +1,118 @@
+# HaoNick configuration by Haoshoku
+# Support: https://haoshoku.xyz/go/discord
+# If you want to use the integrated prefix/suffix system of HaoNick, do not forget to activate it here.
+
+# Nicked-Ranks: A rank that is being used if you nick yourself
+
+# Set it to true if you want to use the fake_rank {prefix+suffix} from HaoNick!
+fake_ranks_settings:
+  chat: true
+  tab: true
+
+# Explantation of fake_rank system of HaoNick:
+# You can just copy a rank block and paste it again with a different name.
+# If you want to have a sorted scoreboard, be sure to make an order in the "name" of tab entry of each rank.
+# Example: 003mvp is above 004mvp
+#
+# Important: You need to set a COLOR if you are using 1.13 or HIGHER.
+# Take a look here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html
+# You see there colors like RED, GRAY. Write these colors in the uppercase in the color entry if you want to use it.
+# Only one color can be used!
+
+# Each fake_rank has its own permission. Just give the specific fake_rank the permission!
+# If you have a permission plugins that allows you to give '*' permission, just set the permissions of OTHER
+# ranks to false (- permission).
+
+
+fake_ranks:
+  sensei:
+    display_name: '&5Sensei'
+    permission: 'haonick.fakerank.mvp'
+    default: false
+    chat:
+      message: '&5&lSENSEI &5%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "01"
+      prefix: '&5&lSENSEI &5'
+      suffix: ''
+      color: 'DARK_PURPLE'
+      player_list_name: 'none'
+  gold:
+    display_name: '&6Gold Ninja'
+    permission: 'haonick.fakerank.normal'
+    default: false
+    chat:
+      message: '&6&lGOLD NINJA &6%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "14"
+      prefix: '&6&lGOLD NINJA &6'
+      suffix: ''
+      color: 'GOLD'
+      player_list_name: 'none'
+  diamond:
+    display_name: '&bDiamond Ninja'
+    permission: 'haonick.fakerank.normal'
+    default: false
+    chat:
+      message: '&b&lDIAMOND NINJA &b%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "13"
+      prefix: '&b&lDIAMOND NINJA &b'
+      suffix: ''
+      color: 'AQUA'
+      player_list_name: 'none'
+  emerald:
+    display_name: '&2Emerald Ninja'
+    permission: 'haonick.fakerank.normal'
+    default: false
+    chat:
+      message: '&2lEMERALD NINJA &2%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "11"
+      prefix: '&2&lEMERALD NINJA &2'
+      suffix: ''
+      color: 'DARK_GREEN'
+      player_list_name: 'none'
+  ruby:
+    display_name: '&4Ruby Ninja'
+    permission: 'haonick.fakerank.normal'
+    default: false
+    chat:
+      message: '&4&lRUBY NINJA &4%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "10"
+      prefix: '&4&lRUBY NINJA &4'
+      suffix: ''
+      color: 'DARK_RED'
+      player_list_name: 'none'
+  ninja:
+    display_name: '&9Ninja'
+    permission: 'haonick.fakerank.normal'
+    default: true
+    chat:
+      message: '&9&lNINJA &9%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "90"
+      prefix: '&9&lNINJA &9'
+      suffix: ''
+      color: 'BLUE'
+      player_list_name: 'none'
+  none:
+    display_name: '&f&lNone'
+    permission: 'haonick.fakerank.normal'
+    default: false
+    chat:
+      message: '&f%name%&f: %message%'
+      chatcolor: true
+    tab:
+      weight: "99"
+      prefix: ''
+      suffix: ''
+      color: 'WHITE'
+      player_list_name: 'none'

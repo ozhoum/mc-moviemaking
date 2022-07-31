@@ -1,3 +1,0 @@
-ChatDisable: Chat has been disabled.
-ChatEnable: Chat has been enabled.
-ChatIsDisabled: Chat is disabled.
